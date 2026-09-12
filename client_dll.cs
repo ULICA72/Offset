@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-21 11:31:21.224607900 UTC
+// 2026-09-12 11:34:36.299695 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
-    // Class count: 563
-    // Enum count: 18
+    // Class count: 568
+    // Enum count: 14
     public static class ClientDll {
         // Alignment: 4
         // Member count: 5
@@ -2295,6 +2295,17 @@ namespace CS2Dumper.Schemas {
         // Field count: 0
         public static class C_Item_Healthshot {
         }
+        // Parent: C_BaseEntity
+        // Field count: 7
+        public static class CCSCustomHudLayout {
+            public const nint m_strLayout = 0x618; // CUtlSymbolLarge
+            public const nint m_bObservable = 0x620; // bool
+            public const nint m_vecPlayerLayoutStates = 0x628; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x690; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x798; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x7C8; // C_NetworkUtlVectorBase<CUtlString>
+        }
         // Parent: None
         // Field count: 3
         public static class CEntityInstance {
@@ -2374,7 +2385,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_Entity_hLightProbeTexture_SH2_B = 0x16B8; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_hLightProbeDirectLightIndicesTexture = 0x16C0; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_hLightProbeDirectLightScalarsTexture = 0x16C8; // CStrongHandle<InfoForResourceTypeCTextureBase>
-            public const nint m_Entity_hLightPrpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63 = 0x16D0; // CStrongHandle<InfoForResourceTypeCTextureBase>
+            public const nint m_Entity_hLightProbeDirectLightShadowsTexture = 0x16D0; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_vBoxMins = 0x16D8; // Vector
             public const nint m_Entity_vBoxMaxs = 0x16E4; // Vector
             public const nint m_Entity_bMoveable = 0x16F0; // bool
@@ -2652,7 +2663,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bUseParentRenderBounds = 0x3F0; // bool
             public const nint m_bDisableSolidCollisionsForHierarchy = 0x3F1; // bool
             public const nint m_bDirtyMotionType = 0x3F2; // bool
-            public const nint m_bIsGenerpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63 = 0x3F3; // bool
+            public const nint m_bIsGeneratingLatchedParentSpaceState = 0x3F3; // bool
             public const nint m_materialGroup = 0x3F8; // CUtlStringToken
             public const nint m_nHitboxSet = 0x3FC; // uint8
         }
@@ -2848,6 +2859,10 @@ namespace CS2Dumper.Schemas {
             public const nint m_flThrowVelocity = 0x860; // float32
             public const nint m_vSmokeColor = 0x864; // Vector
             public const nint m_szAnimClass = 0x870; // CGlobalSymbol
+        }
+        // Parent: None
+        // Field count: 0
+        public static class CCSCustomHudLayout_API {
         }
         // Parent: None
         // Field count: 6
@@ -3396,7 +3411,7 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: C_PointEntity
         // Field count: 0
-        public static class C_InfoInstrpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63 {
+        public static class C_InfoInstructorHintHostageRescueZone {
         }
         // Parent: None
         // Field count: 2
@@ -3603,6 +3618,18 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 0
         public static class C_SoundOpvarSetOBBEntity {
+        }
+        // Parent: None
+        // Field count: 8
+        public static class CCSCustomPlayerCamera {
+            public const nint m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
+            public const nint m_nCameraMode = 0x604; // CustomCameraMode_t
+            public const nint m_hFollowEntity = 0x608; // CHandle<C_BaseEntity>
+            public const nint m_bFollowEyes = 0x60C; // bool
+            public const nint m_vecFollowOffset = 0x610; // Vector
+            public const nint m_vecCameraOffset = 0x61C; // Vector
+            public const nint m_bClipCameraOffset = 0x628; // bool
+            public const nint m_flCameraOffsetReturnStrength = 0x62C; // float32
         }
         // Parent: None
         // Field count: 1
@@ -4813,7 +4840,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_Entity_hLightProbeTexture_SH2_B = 0x1620; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_hLightProbeDirectLightIndicesTexture = 0x1628; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_hLightProbeDirectLightScalarsTexture = 0x1630; // CStrongHandle<InfoForResourceTypeCTextureBase>
-            public const nint m_Entity_hLightPrpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63 = 0x1638; // CStrongHandle<InfoForResourceTypeCTextureBase>
+            public const nint m_Entity_hLightProbeDirectLightShadowsTexture = 0x1638; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Entity_vBoxMins = 0x1640; // Vector
             public const nint m_Entity_vBoxMaxs = 0x164C; // Vector
             public const nint m_Entity_bMoveable = 0x1658; // bool
@@ -4924,6 +4951,14 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 0
         public static class C_CSGO_MapPreviewCameraPath_API {
+        }
+        // Parent: None
+        // Field count: 4
+        public static class CCSCustomHudLayoutState {
+            public const nint m_playerSlot = 0x30; // CPlayerSlot
+            public const nint m_bInputCaptureEnabled = 0x34; // bool
+            public const nint m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
+            public const nint m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
         }
         // Parent: C_CSGO_TeamIntroCharacterPosition
         // Field count: 0
@@ -5095,6 +5130,10 @@ namespace CS2Dumper.Schemas {
         // Parent: C_BaseModelEntity
         // Field count: 0
         public static class C_TriggerVolume {
+        }
+        // Parent: None
+        // Field count: 0
+        public static class CCSPlayerCamera {
         }
         // Parent: None
         // Field count: 1
@@ -5639,7 +5678,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_nValueSystemVar = 0x90; // CompositeMaterialVarSystemVar_t
             public const nint m_strResourceMaterial = 0x98; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeIMaterial2>>
             public const nint m_strTextureContentAssetPath = 0x178; // CUtlString
-            public const nint m_strpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63 = 0x180; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCTextureBase>>
+            public const nint m_strTextureRuntimeResourcePath = 0x180; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCTextureBase>>
             public const nint m_strTextureCompilationVtexTemplate = 0x260; // CUtlString
             public const nint m_nTextureType = 0x268; // CompositeMaterialInputTextureType_t
             public const nint m_strString = 0x270; // CUtlString
